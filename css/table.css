@@ -1,0 +1,33 @@
+.table-page .db-header nav {
+  background:#333;
+  color:white;
+  height:64px;
+}
+
+.table-page .db-header .input-nav {
+  padding:7px;
+  background:transparent;
+  margin-left:5rem !important;
+  width:30rem !important;
+}
+
+.table-page .db-header .space {
+  margin-right:1rem;
+}
+
+.table-page .db-header .pane-sm {
+  width:3rem;
+  height:3rem;
+}
+
+@media(max-width:1320px) {
+  .table-page .db-header .input-nav {
+    width:15rem !important;
+  }
+}
+
+@media(max-width:920px) {
+  .table-page .db-header .input-nav, .db-header .space {
+    display:none;
+  }
+}

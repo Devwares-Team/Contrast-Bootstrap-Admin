@@ -1,0 +1,76 @@
+.profile .cards-container1 {
+	display:grid;
+	grid-gap:30px;
+	grid-template-columns: 1fr 2fr;
+}
+.profile .mini-container {
+	display:grid;
+	grid-gap:30px;
+	grid-template-columns: repeat(2, 1fr);
+}
+.profile .cards-container2 {
+	margin-top:20px;
+	display:grid;
+	grid-gap:40px;
+	grid-template-columns: repeat(2, 1fr)
+}
+.profile .cards-container2 .card {
+	max-width:500px;
+}
+
+@media (max-width:1240px) {
+	.profile .cards-container1 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.profile .mini-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width:900px) {
+	.profile .cards-container1 {
+		margin:0 auto;
+		max-width:450px;
+		grid-template-columns: 1fr;
+	}
+	.profile .cards-container2 {
+		margin:30px auto;
+		max-width:450px;
+		grid-template-columns: 1fr;
+	}
+}
+
+.profile .db-header nav {
+  background:#333;
+  color:white;
+  height:64px;
+}
+
+.profile .db-header .input-nav {
+  padding:7px;
+  background:transparent;
+  margin-left:5rem !important;
+  width:30rem !important;
+}
+
+.profile .db-header .space {
+  margin-right:1rem;
+}
+
+.profile .db-header .pane-sm {
+  width:3rem;
+  height:3rem;
+}
+
+@media(max-width:1320px) {
+  .profile .db-header .input-nav {
+    width:15rem !important;
+  }
+}
+
+@media(max-width:920px) {
+  .profile .db-header .input-nav, .db-header .space {
+    display:none;
+  }
+}
+
