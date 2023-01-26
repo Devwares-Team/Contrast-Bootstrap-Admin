@@ -1,4 +1,4 @@
-# Contrast React Admin Dashboard (Free)
+# Contrast React Admin Dashboard
 
 This project was made with the CDBootstrap Package [CDBootstrap](https://github.com/Devwares-Team/contrast-bootstrap-free).
 
