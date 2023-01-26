@@ -2,28 +2,6 @@
 
 This project was made with the CDBootstrap Package [CDBootstrap](https://github.com/Devwares-Team/contrast-bootstrap-free).
 
-## Install
-
-```bash
-npm install cdbootstrap
-```
-
-or 
-
-```bash
-yarn add cdbootstrap
-```
-
-## Usage
-
-```bash
-npm start
-```
-or
-
-```bash
-yarn start
-```
 
 
 # Browser support
