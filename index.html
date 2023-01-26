@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/dashboard.css"/>
-    <link rel="stylesheet" href="../node_modules/contrast-bootstrap-free/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../node_modules/contrast-bootstrap-free/css/cdb.css"/>
-    <script src="../node_modules/contrast-bootstrap-free/js/bootstrap.min.js"></script>
-    <script src="../node_modules/contrast-bootstrap-free/js/cdb.js"></script>
-    <script src="https://kit.fontawesome.com/9d1d9a82d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../node_modules/contrast-bootstrap-free/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../node_modules/contrast-bootstrap-free/css/cdb.css"/> -->
+    <!-- <script src="../node_modules/contrast-bootstrap-free/js/bootstrap.min.js"></script>
+    <script src="../node_modules/contrast-bootstrap-free/js/cdb.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9d1d9a82d2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="dashboard">
@@ -57,9 +71,11 @@
           "
         >
           <header class="db-header">
-            <nav class="d-flex justify-content-between align-items-center px-3 py-2">
+            <nav
+              class="d-flex justify-content-between align-items-center px-3 py-2"
+            >
               <div class="cdb-form mb-0">
-                <input type="search" placeholder="Search" class="input-nav"/>
+                <input type="search" placeholder="Search" class="input-nav" />
               </div>
               <div class="ml-auto d-flex align-items-center">
                 <div class="d-flex align-items-center mr-3">
@@ -534,18 +550,22 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+      crossorigin="anonymous"
+    ></script>
     <script>
-      const chart1 = document.getElementById('chart1').getContext('2d');
+      const chart1 = document.getElementById("chart1").getContext("2d");
 
       const myChart1 = new Chart(chart1, {
-        type: 'pie',
+        type: "pie",
         data: {
-          labels: ['Eating', 'Drinking', 'Sleeping'],
+          labels: ["Eating", "Drinking", "Sleeping"],
           datasets: [
             {
-              label: 'My First dataset',
-              backgroundColor: ['#F2C94C', '#2F80ED', '#9B51E0'],
+              label: "My First dataset",
+              backgroundColor: ["#F2C94C", "#2F80ED", "#9B51E0"],
               borderWidth: 0,
               data: [9, 22, 7],
             },
@@ -558,28 +578,28 @@
         },
       });
       const myChart2 = new Chart(chart2, {
-        type: 'bar',
+        type: "bar",
         data: {
           labels: [
-            'Eating',
-            'Drinking',
-            'Sleeping',
-            'Designing',
-            'Coding',
-            'Cycling',
-            'Running',
+            "Eating",
+            "Drinking",
+            "Sleeping",
+            "Designing",
+            "Coding",
+            "Cycling",
+            "Running",
           ],
           datasets: [
             {
-              label: 'My First dataset',
-              backgroundColor: 'rgba(255, 153, 51, 0.8)',
-              borderColor: 'rgb(102, 51, 0)',
+              label: "My First dataset",
+              backgroundColor: "rgba(255, 153, 51, 0.8)",
+              borderColor: "rgb(102, 51, 0)",
               data: [65, 59, 75, 81, 56, 55, 40],
             },
             {
-              label: 'My Second dataset',
-              backgroundColor: '#2F80ED',
-              borderColor: 'rgb(0, 41, 102)',
+              label: "My Second dataset",
+              backgroundColor: "#2F80ED",
+              borderColor: "rgb(0, 41, 102)",
               data: [38, 48, 60, 79, 96, 47, 80],
             },
           ],
@@ -615,7 +635,7 @@
       });
     </script>
     <script>
-      const sidebar = document.querySelector('.sidebar');
+      const sidebar = document.querySelector(".sidebar");
       new CDB.Sidebar(sidebar);
     </script>
   </body>
